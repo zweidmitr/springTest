@@ -1,6 +1,7 @@
 package com.zwei.spring.database.pool;
 
 import lombok.RequiredArgsConstructor;
+import lombok.ToString;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
@@ -8,6 +9,7 @@ import javax.annotation.PostConstruct;
 import javax.annotation.PreDestroy;
 
 @RequiredArgsConstructor
+@ToString
 @Component(value = "pool1")
 public class ConnectionPool {
     @Value("${db.username}")
