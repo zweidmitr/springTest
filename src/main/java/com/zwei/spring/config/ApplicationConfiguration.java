@@ -13,10 +13,9 @@ import org.springframework.stereotype.Component;
 //@ImportResource("classpath:application.xml")
 @Import(WebConfiguration.class)
 @Configuration(proxyBeanMethods = true)
-@PropertySource("classpath:application.properties")
 public class ApplicationConfiguration {
     @Bean("pool2")
-    @Scope(BeanDefinition.SCOPE_PROTOTYPE)
+    @Scope(BeanDefinition.SCOPE_SINGLETON)
     public ConnectionPool pool2(@Value("${db.username}") String username) {
         return new ConnectionPool(username, 20);
     }
