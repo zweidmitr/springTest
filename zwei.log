@@ -1,0 +1,12 @@
+2022-06-27 08:18:50.893  INFO 13324 --- [main] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-06-27 08:18:50.908  INFO 13324 --- [main] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-06-27 08:18:50.909  INFO 13324 --- [main] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-06-27 08:18:51.026  INFO 13324 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-06-27 08:18:51.026  INFO 13324 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-06-27 08:18:51.026  INFO 13324 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-06-27 08:19:37.735  INFO 16412 --- [main] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-06-27 08:19:37.748  INFO 16412 --- [main] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-06-27 08:19:37.749  INFO 16412 --- [main] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-06-27 08:19:37.845  INFO 16412 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-06-27 08:19:37.845  INFO 16412 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-06-27 08:19:37.846  INFO 16412 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool

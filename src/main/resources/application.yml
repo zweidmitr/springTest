@@ -25,3 +25,6 @@ logging:
   level:
     root: WARN
     com.zwei.spring.database.pool.ConnectionPool: INFO
+  file:
+    name: zwei.log
+    path: /
