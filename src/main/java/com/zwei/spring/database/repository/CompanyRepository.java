@@ -39,7 +39,7 @@ public class CompanyRepository implements CrudRepository<Integer, Company> {
     @Override
     public Optional<Company> findById(Integer id) {
         log.info("findById method...");
-        return Optional.of(new Company(id,null, Collections.emptyMap()));
+        return Optional.of(new Company(id, null, Collections.emptyMap()));
     }
 
     @Override

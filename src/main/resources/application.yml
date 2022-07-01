@@ -31,9 +31,9 @@ logging:
 
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5433/postgres
+    url: jdbc:postgresql://localhost:5432/springTest
     username: postgres
-    password: pass
+    password: password
     driver-class-name: org.postgresql.Driver
   jpa:
     properties:
