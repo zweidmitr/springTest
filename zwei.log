@@ -1997,3 +1997,28 @@ Caused by: org.hibernate.HibernateException: Access to DialectResolutionInfo can
 2022-07-01 09:27:01.352  INFO 12636 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
 2022-07-01 09:27:01.353  INFO 12636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
 2022-07-01 09:27:01.360  INFO 12636 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2022-07-01 14:48:29.624  INFO 7868 --- [Test worker] c.z.s.i.d.r.CompanyRepositoryTest        : Starting CompanyRepositoryTest using Java 16.0.2 on Zeit with PID 7868 (started by zweim in G:\ideaProject\springTest)
+2022-07-01 14:48:29.625  INFO 7868 --- [Test worker] c.z.s.i.d.r.CompanyRepositoryTest        : The following 1 profile is active: "test"
+2022-07-01 14:48:30.417  INFO 7868 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-07-01 14:48:30.440  INFO 7868 --- [Test worker] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 13 ms. Found 0 JPA repository interfaces.
+2022-07-01 14:48:31.154  INFO 7868 --- [Test worker] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-07-01 14:48:31.243  INFO 7868 --- [Test worker] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-07-01 14:48:31.508  INFO 7868 --- [Test worker] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-07-01 14:48:31.664  INFO 7868 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-07-01 14:48:31.915  INFO 7868 --- [Test worker] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-07-01 14:48:31.961  INFO 7868 --- [Test worker] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2022-07-01 14:48:33.110  INFO 7868 --- [Test worker] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-07-01 14:48:33.119  INFO 7868 --- [Test worker] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-07-01 14:48:33.136  INFO 7868 --- [Test worker] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-07-01 14:48:33.387  INFO 7868 --- [Test worker] com.zwei.spring.config.JpaConfiguration  : Jpa configuration is enabled
+2022-07-01 14:48:33.414  INFO 7868 --- [Test worker] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-07-01 14:48:33.416  INFO 7868 --- [Test worker] c.z.spring.database.pool.ConnectionPool  : Init connection pool
+2022-07-01 14:48:33.421  INFO 7868 --- [Test worker] c.z.s.d.repository.CompanyRepository     : init company repository
+2022-07-01 14:48:33.452  INFO 7868 --- [Test worker] c.z.s.d.repository.CompanyRepository     : init company repository
+2022-07-01 14:48:33.692  INFO 7868 --- [Test worker] c.z.s.i.d.r.CompanyRepositoryTest        : Started CompanyRepositoryTest in 4.556 seconds (JVM running for 6.229)
+2022-07-01 14:48:34.122  INFO 7868 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-07-01 14:48:34.123  INFO 7868 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-07-01 14:48:34.124  INFO 7868 --- [SpringApplicationShutdownHook] c.z.spring.database.pool.ConnectionPool  : clean connection pool
+2022-07-01 14:48:34.124  INFO 7868 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-07-01 14:48:34.127  INFO 7868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-07-01 14:48:34.136  INFO 7868 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
