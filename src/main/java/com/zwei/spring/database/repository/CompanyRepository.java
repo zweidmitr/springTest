@@ -1,14 +1,16 @@
 package com.zwei.spring.database.repository;
 
 import com.zwei.spring.database.entity.Company;
-import org.springframework.data.repository.CrudRepository;
-import org.springframework.data.repository.Repository;
+import org.springframework.data.jpa.repository.JpaRepository;
 
+import java.util.List;
 import java.util.Optional;
 
-public interface CompanyRepository extends CrudRepository<Company, Integer> {
+public interface CompanyRepository extends JpaRepository<Company, Integer> {
 
-    public Optional<Company> findById(Integer id);
+    //Optional, Entity, Future
+    Optional<Company> findByName(String name);
 
-    public void delete(Company entity);
+    // Collection, Stream(batch, close)
+    List<Company> findAllByNameContainingIgnoreCase(String fragment);
 }
