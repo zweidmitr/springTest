@@ -1,7 +1,6 @@
 package com.zwei.spring.service;
 
-import com.zwei.spring.database.entity.Company;
-import com.zwei.spring.database.repository.CrudRepository;
+import com.zwei.spring.database.repository.CompanyRepository;
 import com.zwei.spring.dto.CompanyReadDto;
 import com.zwei.spring.listner.entity.AccessType;
 import com.zwei.spring.listner.entity.EntityEvent;
@@ -16,7 +15,7 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class CompanyService {
 
-    private final CrudRepository<Integer, Company> companyRepository;
+    private final CompanyRepository companyRepository;
     private final UserService userService;
     private final ApplicationEventPublisher eventPublisher;
 

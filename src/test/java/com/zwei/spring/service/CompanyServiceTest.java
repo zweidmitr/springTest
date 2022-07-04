@@ -1,7 +1,7 @@
 package com.zwei.spring.service;
 
 import com.zwei.spring.database.entity.Company;
-import com.zwei.spring.database.repository.CrudRepository;
+import com.zwei.spring.database.repository.CompanyRepository;
 import com.zwei.spring.dto.CompanyReadDto;
 import com.zwei.spring.listner.entity.EntityEvent;
 import org.junit.jupiter.api.Test;
@@ -25,7 +25,7 @@ class CompanyServiceTest {
     private static final Integer COMPANY_ID = 1;
 
     @Mock
-    private CrudRepository<Integer, Company> companyRepository;
+    private CompanyRepository companyRepository;
     @Mock
     private UserService userService;
     @Mock
