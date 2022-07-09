@@ -12,18 +12,20 @@ import java.time.LocalDate;
 
 import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
+
 @IT
 @RequiredArgsConstructor
 class UserRepositoryTest {
     private final UserRepository userRepository;
 
-    @Test void checkUpdate() {
+    @Test
+    void checkUpdate() {
         var ivan = userRepository.getById(1L);
         assertSame(Role.ADMIN, ivan.getRole());
         ivan.setBirthDate(LocalDate.now());
 
         var resultCount = userRepository.updateRole(Role.USER, 1L, 5L);
-        assertEquals(2,resultCount);
+        assertEquals(2, resultCount);
 
         ivan.getCompany().getName();
 

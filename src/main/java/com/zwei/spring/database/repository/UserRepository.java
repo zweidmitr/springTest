@@ -25,7 +25,7 @@ public interface UserRepository extends JpaRepository<User, Long> {
             nativeQuery = true)
     List<User> findAllByUsername(String username);
 
-    @Modifying(clearAutomatically = true,flushAutomatically = true)
+    @Modifying(clearAutomatically = true, flushAutomatically = true)
     @Query("update User u "
             + "set u.role = :role "
             + "where u.id in (:ids)")
