@@ -3,6 +3,8 @@ package com.zwei.spring.database.repository;
 import com.zwei.spring.database.entity.Role;
 import com.zwei.spring.database.entity.User;
 import com.zwei.spring.database.pool.ConnectionPool;
+import com.zwei.spring.dto.PersonalInfo;
+import com.zwei.spring.dto.PersonalInfo2;
 import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.BeanDefinition;
@@ -51,4 +53,12 @@ public interface UserRepository extends JpaRepository<User, Long> {
     @Query(value = "select u from User u",
             countQuery = "select count(distinct u.firstname) from User u")
     Page<User> findAllBy(Pageable pageable);
+
+    //    List<PersonalInfo> findAllByCompanyId(Integer companyId);
+    //    <T> List<T> findAllByCompanyId(Integer companyId, Class<T> clazz);
+    @Query(value = "SELECT firstname, lastname, birth_date birthDate "
+            + "FROM users "
+            + "WHERE company_id = :companyId",
+            nativeQuery = true)
+    List<PersonalInfo2> findAllByCompanyId(Integer companyId);
 }
