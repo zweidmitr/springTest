@@ -38,6 +38,4 @@ public class FilterUserRepositoryImpl implements FilterUserRepository {
 
         return entityManager.createQuery(criteria).getResultList();
     }
-
-
 }
