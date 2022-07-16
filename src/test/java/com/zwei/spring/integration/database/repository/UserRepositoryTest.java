@@ -95,5 +95,4 @@ class UserRepositoryTest {
         assertThat(users).hasSize(3);
         System.out.println(users);
     }
-
 }

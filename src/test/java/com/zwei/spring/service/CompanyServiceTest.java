@@ -35,7 +35,7 @@ class CompanyServiceTest {
 
     @Test
     void findById() {
-        doReturn(Optional.of(new Company(COMPANY_ID,null, Collections.emptyMap())))
+        doReturn(Optional.of(new Company(COMPANY_ID, null, Collections.emptyMap())))
                 .when(companyRepository).findById(COMPANY_ID);
         var result = companyService.findById(COMPANY_ID);
 
