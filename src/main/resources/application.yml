@@ -25,6 +25,7 @@ logging:
   level:
     root: INFO
     com.zwei.spring.database.pool.ConnectionPool: INFO
+    org.springframework.jdbc.core: TRACE
   file:
     name: zwei.log
     path: /
