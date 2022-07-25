@@ -11,6 +11,7 @@ import org.junit.jupiter.api.Test;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.domain.Pageable;
 import org.springframework.data.domain.Sort;
+import org.springframework.test.context.jdbc.Sql;
 
 
 import java.time.LocalDate;
@@ -21,6 +22,9 @@ import static org.assertj.core.api.Assertions.*;
 import static org.junit.jupiter.api.Assertions.*;
 
 @IT
+@Sql({
+        "classpath:sql/data.sql"
+})
 @RequiredArgsConstructor
 class UserRepositoryTest {
     private final UserRepository userRepository;
@@ -36,7 +40,6 @@ class UserRepositoryTest {
     void checkJdbcTemplate() {
         var users = userRepository.findAllByCompanyIdAndRole(1, Role.USER);
         assertThat(users).hasSize(1);
-        System.out.println();
     }
 
     @Test
